@@ -10,9 +10,9 @@ public class PlayerHuman extends Player {
 
 	@Override
 	public Roshambo generateRoshambo() {
-		String choice = Validator.getChar(sc, "\nWhat your choice? (R/ P/ S) ", "r", "s", "p");
+		String choice = Validator.getChar(sc, "\nWhat your choice? (r/ p/ s) ", "r", "s", "p");
 		
-		switch(choice) {
+		switch(choice.toLowerCase()) {
 		case "r":
 			return Roshambo.ROCK;
 		case "p":

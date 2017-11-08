@@ -38,7 +38,7 @@ public class RoshamboApp {
 
 		while (repeat) {
 			// start game with appropriate opponent
-			if (opponentChoice == "j") { // if the jets play against jets
+			if (opponentChoice.equalsIgnoreCase("j")) { // if the jets play against jets
 				gameOutcome = Player.winnerIs(player1, player1.generateRoshambo(), player2, player2.generateRoshambo());
 				updateScores(gameOutcome, player1, player2);
 				printScores(player1, player2);
